@@ -13,3 +13,4 @@ def my_all?(collection)
   collection
 end
 
+my_all?(collection) {|i| i < 3}
