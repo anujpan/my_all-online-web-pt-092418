@@ -12,7 +12,11 @@ def my_all?(collection)
     i += 1
   end
   
-  collection
+  if block_return_values.include? (false)
+    false
+  else
+    true
+  end
 end
 
 my_all?(collection) {|i| i < 3}
